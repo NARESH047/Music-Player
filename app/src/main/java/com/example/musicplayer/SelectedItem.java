@@ -126,8 +126,9 @@ public class SelectedItem extends AppCompatActivity {
             public void onClick(View v) {
                 if (isPlaying) {
                     mediaPlayer.stop();
-                    isPlaying = false;
                     mediaPlayer.release();
+                    isPlaying = false;
+                }
                     if (currentPosition + 1 < songListFiltered.size()) {
                         mediaPlayer = MediaPlayer.create(getApplicationContext(), Uri.parse(songListFiltered.get(currentPosition + 1).getPath()));
                         currentSongName.setText(songListFiltered.get(currentPosition + 1).getName());
@@ -140,7 +141,6 @@ public class SelectedItem extends AppCompatActivity {
                     }
 
                 }
-            }
         });
 
         previous.setOnClickListener(new View.OnClickListener() {
@@ -150,6 +150,7 @@ public class SelectedItem extends AppCompatActivity {
                     mediaPlayer.stop();
                     mediaPlayer.release();
                     isPlaying = false;
+                }
                     if ((currentPosition - 1) != 0) {
                         currentSongName.setText(songListFiltered.get(currentPosition - 1).getName());
                         currentAlbumName.setText(songListFiltered.get(currentPosition - 1).getAlbum());
@@ -160,7 +161,6 @@ public class SelectedItem extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "End of playlist", Toast.LENGTH_SHORT).show();
                     }
                 }
-            }
         });
     }
 
