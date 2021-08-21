@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 LoaderManager loaderManager = getLoaderManager();
                 loaderManager.initLoader(1, null, this);
             } else {
-                mEmptyStateTextView.setText("Grant permission to access to files and restart app");
+                mEmptyStateTextView.setText("Please grant permission to access files and restart app");
             }
         }
     }
