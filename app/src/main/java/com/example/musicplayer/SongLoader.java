@@ -8,6 +8,8 @@ import androidx.annotation.RequiresApi;
 
 import java.util.List;
 
+import static com.example.musicplayer.GetMusic.getAllAudioFromDevice;
+
 public class SongLoader extends AsyncTaskLoader<List<Audio>> {
 
     private String mUrl;
@@ -25,7 +27,7 @@ public class SongLoader extends AsyncTaskLoader<List<Audio>> {
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public List<Audio> loadInBackground() {
-        List<Audio> allAudioFromDevice = com.example.superhero.GetMusic.getAllAudioFromDevice(getContext());
+        List<Audio> allAudioFromDevice = getAllAudioFromDevice(getContext());
         return allAudioFromDevice;
     }
 
