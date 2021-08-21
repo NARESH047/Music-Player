@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+
+    <color name="colorPrimaryDark">#000000</color>
+
+    <!-- Accent color of the app -->
+    <color name="colorAccent">#10CAC9</color>
+
+    <color name="textColorSongDetails">#B4BAC0</color>
+
+    <color name="songNum1">#4A7BA7</color>
+
+    <color name="songNum2">#04B4B3</color>
+
+    <color name="songNum3">#10CAC9</color>
+
+    <color name="songNum4">#F5A623</color>
+
+    <color name="songNum5">#FF7D50</color>
+
+    <color name="songNum6">#FC6644</color>
+
+    <color name="songNum7">#E75F40</color>
+
+    <color name="songNum8">#E13A20</color>
+
+    <color name="songNum9">#D93218</color>
+
+    <color name="songNum10plus">#C03823</color>
+</resources>
